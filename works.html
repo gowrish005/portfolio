@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      /* Style for the portfolio layout */
+      .portfolio-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        padding: 20px;
+      }
+
+      .portfolio-item {
+        width: calc(33.333% - 20px); /* Fits 3 items per row */
+        background-color: #ffffff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        border-radius: 8px;
+        overflow: hidden;
+        transition: transform 0.3s ease;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 20px;
+        box-sizing: border-box;
+      }
+
+      .portfolio-item:hover {
+        transform: translateY(-5px);
+      }
+
+      .portfolio-item img {
+        width: 100%;
+        height: auto;
+        max-height: 200px;
+        object-fit: cover;
+        object-position: top;
+        border-bottom: 1px solid #ddd;
+      }
+
+      .portfolio-description {
+        padding: 15px;
+      }
+
+      .portfolio-description h2 {
+        font-size: 1.2em;
+        margin: 10px 0 5px;
+        color: #333;
+      }
+
+      .portfolio-description p {
+        font-size: 1em;
+        color: #666;
+      }
+
+      /* Responsive adjustments */
+      @media (max-width: 768px) {
+        .portfolio-item {
+          width: calc(50% - 20px); /* 2 items per row on tablets */
+        }
+      }
+
+      @media (max-width: 480px) {
+        .portfolio-item {
+          width: 100%; /* Full width on smaller screens */
+        }
+      }
+    </style>
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+    <nav
+      class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target"
+      id="ftco-navbar"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="index.html">GOWRISH H B</a>
+        <button
+          class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle"
+          type="button"
+          data-toggle="collapse"
+          data-target="#ftco-nav"
+          aria-controls="ftco-nav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="oi oi-menu"></span> Menu
+        </button>
+
+        <div class="collapse navbar-collapse" id="ftco-nav">
+          <ul class="navbar-nav nav ml-auto">
+            <li class="nav-item">
+              <a href="index.html#home-section" class="nav-link"><span>Home</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="index.html#about-section" class="nav-link"><span>About</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="index.html#resume-section" class="nav-link"
+                ><span>Experience</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="index.html#services-section" class="nav-link"
+                ><span>Skills</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="index.html#certificates-section" class="nav-link"
+                ><span>Certificates</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="index.html#contact-section" class="nav-link"
+                ><span>Contact</span></a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <br /><br /><br />
+
+    <main class="portfolio-container">
+      <!-- Portfolio Item 1 -->
+      <!-- Portfolio Item 1 -->
+      <a
+        href="images/work/works (1).png"
+        target="_blank"
+        class="portfolio-item"
+      >
+        <img src="images/work/works (1).png" alt="Portfolio Item 1" />
+        <div class="portfolio-description">
+          <h2>Title 1</h2>
+          <p>Description for portfolio item 1.</p>
+        </div>
+      </a>
+
+      <!-- Portfolio Item 2 -->
+      <a
+        href="images/work/works (2).png"
+        target="_blank"
+        class="portfolio-item"
+      >
+        <img src="images/work/works (2).png" alt="Portfolio Item 2" />
+        <div class="portfolio-description">
+          <h2>Title 2</h2>
+          <p>Description for portfolio item 2.</p>
+        </div>
+      </a>
+
+      <!-- Portfolio Item 3 -->
+      <a
+        href="images/work/works (3).png"
+        target="_blank"
+        class="portfolio-item"
+      >
+        <img src="images/work/works (3).png" alt="Portfolio Item 3" />
+        <div class="portfolio-description">
+          <h2>Title 3</h2>
+          <p>Description for portfolio item 3.</p>
+        </div>
+      </a>
+
+      <!-- Portfolio Item 4 -->
+      <a
+        href="images/work/works (4).png"
+        target="_blank"
+        class="portfolio-item"
+      >
+        <img src="images/work/works (4).png" alt="Portfolio Item 4" style="object-position: center;"/>
+        <div class="portfolio-description">
+          <h2>Title 4</h2>
+          <p>Description for portfolio item 4.</p>
+        </div>
+      </a>
+
+      <!-- Portfolio Item 5 -->
+      <a
+        href="images/work/works (5).png"
+        target="_blank"
+        class="portfolio-item"
+      >
+        <img src="images/work/works (5).png" alt="Portfolio Item 5" />
+        <div class="portfolio-description">
+          <h2>Title 5</h2>
+          <p>Description for portfolio item 5.</p>
+        </div>
+      </a>
+
+      <!-- Portfolio Item 6 -->
+      <a
+        href="images/work/works (6).png"
+        target="_blank"
+        class="portfolio-item"
+      >
+        <img src="images/work/works (6).png" alt="Portfolio Item 6" />
+        <div class="portfolio-description">
+          <h2>Title 6</h2>
+          <p>Description for portfolio item 6.</p>
+        </div>
+      </a>
+
+      <!-- Portfolio Item 7 -->
+      <a
+        href="images/work/works (7).png"
+        target="_blank"
+        class="portfolio-item"
+      >
+        <img src="images/work/works (7).png" alt="Portfolio Item 7" style="object-position: center;"/>
+        <div class="portfolio-description">
+          <h2>Title 7</h2>
+          <p>Description for portfolio item 7.</p>
+        </div>
+      </a>
+
+      <!-- Portfolio Item 8 -->
+      <a
+        href="images/work/works (8).png"
+        target="_blank"
+        class="portfolio-item"
+      >
+        <img src="images/work/works (8).png" alt="Portfolio Item 8" />
+        <div class="portfolio-description">
+          <h2>Title 8</h2>
+          <p>Description for portfolio item 8.</p>
+        </div>
+      </a>
+
+      <!-- Portfolio Item 9 -->
+      <a
+        href="images/work/works (9).png"
+        target="_blank"
+        class="portfolio-item"
+      >
+        <img src="images/work/works (9).png" alt="Portfolio Item 9" style="object-position: center;"/>
+        <div class="portfolio-description">
+          <h2>Title 9</h2>
+          <p>Description for portfolio item 9.</p>
+        </div>
+      </a>
+
+      <!-- Portfolio Item 10 -->
+      <a
+        href="images/work/works (10).png"
+        target="_blank"
+        class="portfolio-item"
+      >
+        <img src="images/work/works (10).png" alt="Portfolio Item 10" />
+        <div class="portfolio-description">
+          <h2>Title 10</h2>
+          <p>Description for portfolio item 10.</p>
+        </div>
+      </a>
+
+      <!-- Portfolio Item 11 -->
+      <a
+        href="images/work/works (11).png"
+        target="_blank"
+        class="portfolio-item"
+      >
+        <img src="images/work/works (11).png" alt="Portfolio Item 11" />
+        <div class="portfolio-description">
+          <h2>Title 11</h2>
+          <p>Description for portfolio item 11.</p>
+        </div>
+      </a>
+
+      <!-- Portfolio Item 12 -->
+      <a
+        href="images/work/works (12).png"
+        target="_blank"
+        class="portfolio-item"
+      >
+        <img src="images/work/works (12).png" alt="Portfolio Item 12" />
+        <div class="portfolio-description">
+          <h2>Title 12</h2>
+          <p>Description for portfolio item 12.</p>
+        </div>
+      </a>
+
+      <!-- Portfolio Item 13 -->
+      <a
+        href="images/work/works (13).png"
+        target="_blank"
+        class="portfolio-item"
+      >
+        <img src="images/work/works (13).png" alt="Portfolio Item 13" />
+        <div class="portfolio-description">
+          <h2>Title 13</h2>
+          <p>Description for portfolio item 13.</p>
+        </div>
+      </a>
+
+      <!-- Portfolio Item 14 -->
+      <a
+        href="images/work/works (14).png"
+        target="_blank"
+        class="portfolio-item"
+      >
+        <img src="images/work/works (14).png" alt="Portfolio Item 14" style="object-position: center;"/>
+        <div class="portfolio-description">
+          <h2>Title 14</h2>
+          <p>Description for portfolio item 14.</p>
+        </div>
+      </a>
+
+      <!-- Portfolio Item 15 -->
+      <a
+        href="images/work/works (15).png"
+        target="_blank"
+        class="portfolio-item"
+      >
+        <img src="images/work/works (15).png" alt="Portfolio Item 15" style="object-position: center;"/>
+        <div class="portfolio-description">
+          <h2>Title 15</h2>
+          <p>Description for portfolio item 15.</p>
+        </div>
+      </a>
+
+      <!-- Portfolio Item 16 -->
+      <a
+        href="images/work/works (16).png"
+        target="_blank"
+        class="portfolio-item"
+      >
+        <img src="images/work/works (16).png" alt="Portfolio Item 16" />
+        <div class="portfolio-description">
+          <h2>Title 16</h2>
+          <p>Description for portfolio item 16.</p>
+        </div>
+      </a>
+
+      <!-- Portfolio Item 17 -->
+      <a
+        href="images/work/works (17).png"
+        target="_blank"
+        class="portfolio-item"
+      >
+        <img src="images/work/works (17).png" alt="Portfolio Item 17" />
+        <div class="portfolio-description">
+          <h2>Title 17</h2>
+          <p>Description for portfolio item 17.</p>
+        </div>
+      </a>
+
+      <!-- Portfolio Item 18 -->
+      <a
+        href="images/work/works (18).png"
+        target="_blank"
+        class="portfolio-item"
+      >
+        <img src="images/work/works (18).png" alt="Portfolio Item 18" />
+        <div class="portfolio-description">
+          <h2>Title 18</h2>
+          <p>Description for portfolio item 18.</p>
+        </div>
+      </a>
+
+      <!-- Portfolio Item 19 -->
+      <a
+        href="images/work/works (19).png"
+        target="_blank"
+        class="portfolio-item"
+      >
+        <img src="images/work/works (19).png" alt="Portfolio Item 19" />
+        <div class="portfolio-description">
+          <h2>Title 19</h2>
+          <p>Description for portfolio item 19.</p>
+        </div>
+      </a>
+
+      <!-- Portfolio Item 20 -->
+      <a
+        href="images/work/works (20).png"
+        target="_blank"
+        class="portfolio-item"
+      >
+        <img src="images/work/works (20).png" alt="Portfolio Item 20" />
+        <div class="portfolio-description">
+          <h2>Title 20</h2>
+          <p>Description for portfolio item 20.</p>
+        </div>
+      </a>
+
+      <!-- Portfolio Item 21 -->
+      <a
+        href="images/work/works (21).png"
+        target="_blank"
+        class="portfolio-item"
+      >
+        <img src="images/work/works (21).png" alt="Portfolio Item 21" />
+        <div class="portfolio-description">
+          <h2>Title 21</h2>
+          <p>Description for portfolio item 21.</p>
+        </div>
+      </a>
+
+      <!-- Portfolio Item 22 -->
+      <a
+        href="images/work/works (22).png"
+        target="_blank"
+        class="portfolio-item"
+      >
+        <img src="images/work/works (22).png" alt="Portfolio Item 22" />
+        <div class="portfolio-description">
+          <h2>Title 22</h2>
+          <p>Description for portfolio item 22.</p>
+        </div>
+      </a>
+
+      <!-- Portfolio Item 23 -->
+      <a
+        href="images/work/works (23).png"
+        target="_blank"
+        class="portfolio-item"
+      >
+        <img src="images/work/works (23).png" alt="Portfolio Item 23" />
+        <div class="portfolio-description">
+          <h2>Title 23</h2>
+          <p>Description for portfolio item 23.</p>
+        </div>
+      </a>
+
+      <!-- Portfolio Item 24 -->
+      <a
+        href="images/work/works (24).png"
+        target="_blank"
+        class="portfolio-item"
+      >
+        <img src="images/work/works (24).png" alt="Portfolio Item 24" style="object-position: center;"/>
+        <div class="portfolio-description">
+          <h2>Title 24</h2>
+          <p>Description for portfolio item 24.</p>
+        </div>
+      </a>
+
+      <!-- Portfolio Item 25 -->
+      <a
+        href="images/work/works (25).png"
+        target="_blank"
+        class="portfolio-item"
+      >
+        <img src="images/work/works (25).png" alt="Portfolio Item 25" />
+        <div class="portfolio-description">
+          <h2>Title 25</h2>
+          <p>Description for portfolio item 25.</p>
+        </div>
+      </a>
+
+      <!-- Portfolio Item 26 -->
+      <a
+        href="images/work/works (26).png"
+        target="_blank"
+        class="portfolio-item"
+      >
+        <img src="images/work/works (26).png" alt="Portfolio Item 26" />
+        <div class="portfolio-description">
+          <h2>Title 26</h2>
+          <p>Description for portfolio item 26.</p>
+        </div>
+      </a>
+
+      <!-- Portfolio Item 27 -->
+      <a
+        href="images/work/works (27).png"
+        target="_blank"
+        class="portfolio-item"
+      >
+        <img src="images/work/works (27).png" alt="Portfolio Item 27" />
+        <div class="portfolio-description">
+          <h2>Title 27</h2>
+          <p>Description for portfolio item 27.</p>
+        </div>
+      </a>
+
+      <!-- Portfolio Item 28 -->
+      <a
+        href="images/work/works (28).png"
+        target="_blank"
+        class="portfolio-item"
+      >
+        <img src="images/work/works (28).png" alt="Portfolio Item 28" />
+        <div class="portfolio-description">
+          <h2>Title 28</h2>
+          <p>Description for portfolio item 28.</p>
+        </div>
+      </a>
+
+      <!-- Add more portfolio items as needed -->
+      <!-- Ensure to replace the title and description for each item -->
+    </main>
+
+    <footer>
+      <!-- Footer content -->
+    </footer>
+  </body>
+</html>
